@@ -4,37 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abishek Siva</title>
-    <!-- <link rel="stylesheet" href="style.css"> -->
-    <style>
-        body {
-            font-family: Arial, Helvetica, sans-serif;
-            margin: 0;
-        }
-
-        .header {
-            padding: 80px;
-            text-align: center; /* center the text */
-            background: #1abc9c; /* green background */
-            color: white; /* white text color */
-        }
-
-        .header h1 {
-            font-size: 40px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="header">
+    <div class="header" id="home">
         <h1>Abishek Siva</h1>
-        <p>Visitors: <span id="visitor-count">Hi</span></p>
+        <h2>Page Views: <span id="visitor-count"></span></h2>
     </div>
 
-    <!-- <h1>Abishek Siva Resume</h1>
-    <p>Visitors: <span id="visitor-count">Hi</span></p> -->
+    <nav role="navigation" id="navbar">
+        <a data-page="about" class="active" href="#home">About</a>
+        <a data-page="experience" href="#experience">Experience</a>
+        <a data-page="projects" href="#projects">Projects</a>
+        <a data-page="education" href="#education">Education</a>
+        <a data-page="leadership" href="#leadership">Leadership</a>
+    </nav>  
+
+
+    <div class="section">
+        <div id="experience">
+            <h1>Experience</h1>
+            <div class="experience">
+                <h2>SDE Intern at Amazon</h2>
+                <h3>Jun 2023 - Sep 2023</h3>
+                <h3>Seattle, WA</h3>
+                <ul>
+                    <li>Utilized AWS Fargate with Amazon Elastic Container Service (ECS) to replace a monolithic application with a horizontally scaling solution</li>
+                    <li>Created the design for a new Java application to monitor the Wide Area Network for global physical stores</li>
+                    <li>Used AWS Cloud Development Kit to provision resources such as Virtual Private Clouds, ECS Task Definitions, and Application Logs</li>
+                    <li>Built the infrastructure for a CI/CD pipeline with proper region isolation and extensive integration tests</li>
+                </ul>
+
+                <h2>SDE Intern at Northrop Grumman</h2>
+                <h3>Jun 2022 - Aug 2022</h3>
+                <h3>Baltimore, MD</h3>
+                <ul>
+                    <li>Automated the generation and packaging of OS installations, and source code
+                        libraries using CMake</li>
+                    <li>Used Nexus to store and cache binary artifacts, thereby reducing the overall build time by 67%</li>
+                    <li>Leveraged Docker to deliver a virtualized software build environment via a container</li> 
+                    <li>Utilized Jenkins to create a unified Continuous Integration and Continuous Delivery pipeline</li>  
+                </ul>
+
+                <h2>Data Analytics Research Intern at NEATLabs</h2>
+                <h3>Jun 2021 - Aug 2021</h3>
+                <h3>San Diego, CA</h3>
+                <ul>
+                    <li>Conducted and developed a research study on the relationship between race, gender, and mindfulness through EEG machines</li>
+                    <li>Created correlational figures between 10+ data sets using MATLAB functions</li>
+                    <li>Processed survey data and clinical patient data for 200+ subjects using MATLAB</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="projects">
+            <h1>Projects</h1>
+            <div class="projects">
+                <h2>Cloud Resume Challenge - AWS</h2>
+                <h3>Jul 2024</h3>
+                <ul>
+                    <li><strong>Relevant Coursework:</strong> Design and Analysis of Algorithms, Theory of Computability,
+                        Advanced Data Structures, Computer Organization & Systems Programming</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="education">
+            <h1>Education</h1>
+            <div class="education">
+                <h2>University of California, San Diego</h2>
+                <h3>Bachelor of Science in Computer Science and Mathematics</h3>
+                <h3>Jun 2024</h3>
+                <ul>
+                    <li><strong>Relevant Coursework:</strong> Design and Analysis of Algorithms, Theory of Computability,
+                        Advanced Data Structures, Computer Organization & Systems Programming</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="leadership">
+            <h1>Leadership</h1>
+            <div class="leadership">
+                <h2>UCSD Zor</h2>
+                <h3>Logistics Captain</h3>
+                <h3>Jun 2020 - Jun 2024</h3>
+                <ul>
+                    <li>Led recruitment efforts to bring in 20+ dancers to the team through social media posts and on-campus tabling</li>
+                    <li>Fundraised $25,000 for the competition season through paid performances, a GoFundMe campaign, and school competition funds</li>
+                    <li>Communicated with external parties on behalf of our team, such as competition boards, event planners, and school admininstration</li>
+                </ul>
+                <h2>Relay For Life</h2>
+                <h3>Lead Events Coordinator</h3>
+                <h3>Aug 2017 - Jun 2020</h3>
+                <ul>
+                    <li>Recruited high school students to cumulatively raise $200,000 for cancer advocacy, medical
+                        research, and other services to benefit those impacted by cancer</li>
+                    <li>Worked with medical professionals and cancer survivors to host a public symposium addressing
+                        advances in health equity attended by 100 community members</li>
+                    <li>Managed an Event Leadership Team of 25 students by leading weekly one-hour meetings</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+
+    </div>
+
 
     <script src="script.js"></script>
-    <script>
-        // fetchData()
-    </script>
+    <!-- <script>
+        fetchData()
+    </script>  -->
 </body>
 </html>
