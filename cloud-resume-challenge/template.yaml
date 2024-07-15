@@ -70,7 +70,7 @@ Resources:
           - DomainName: cloud-resume-website-abishek-siva.s3-website-us-west-2.amazonaws.com
             Id: cloud-resume-website-abishek-siva.s3-website-us-west-2.amazonaws.com
             CustomOriginConfig:
-              OriginProtocolPolicy: http-only
+              OriginProtocolPolicy: match-viewer
         Enabled: "true"
         DefaultRootObject: index.html
 
