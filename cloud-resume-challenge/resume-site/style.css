@@ -130,11 +130,6 @@ nav a.active:after {
     box-shadow: 
     4px 4px 8px rgba(0, 0, 0, 0.3),
     -4px 4px 8px rgba(0, 0, 0, 0.3);
-
-    /* box-shadow:
-    -4px -4px 8px rgba(0, 0, 0, 0.3), 
-    4px -4px 8px rgba(0, 0, 0, 0.3);    */
-    /* 0 4px 8px rgba(0, 0, 0, 0.0);  */
 }
 
 .section h1 {
@@ -243,6 +238,76 @@ html {
     padding: 80px;
 }
 
-.education {
-    scroll-margin: 100px;
+@media (max-width: 768px) {
+    .header {
+        padding: 100px;
+    }
+    .header h1 {
+        font-size: 50px;
+    }
+    .header h2 {
+        font-size: 16px;
+    }
+    nav {
+        display: none;
+    }
+    nav a {
+        width: 100%;
+        padding: 15px 0;
+        font-size: 18px;
+    }
+    .section {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        width: 90%;
+        padding: 40px;
+    }
+    .section h1 {
+        font-size: 28px;
+    }
+    .footer {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header {
+        padding: 50px;
+    }
+    .header h1 {
+        font-size: 40px;
+    }
+    .header h2 {
+        font-size: 14px;
+    }
+    nav a {
+        font-size: 16px;
+    }
+    .section {
+        padding: 20px;
+    }
+    .section h1 {
+        font-size: 24px;
+    }
+    .experience h2,
+    .education h2,
+    .leadership h2,
+    .projects h2 {
+        font-size: 24px;
+    }
+    .experience h3,
+    .education h3,
+    .leadership h3,
+    .projects h3 {
+        font-size: 16px;
+    }
+    .experience ul li,
+    .education ul li,
+    .leadership ul li,
+    .projects ul li {
+        font-size: 16px;
+    }
+    .footer {
+        padding: 20px;
+    }
 }
