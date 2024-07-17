@@ -34,6 +34,13 @@ body {
     font-size: 20px;
 }
 
+.header p {
+    font-size: 20px;
+    width: 60%;
+    margin: 20px auto;
+    font-weight: 600;
+}
+
 /* .section.sticky {
     padding-top:100px;
 } */
@@ -142,26 +149,6 @@ nav a.active:after {
     font-size: 35px;
 }
 
-.experience h2 {
-    color: #707070;
-    margin: 0px;
-    font-size: 28px;
-    font-weight: 500;
-}
-
-.experience h3 {
-    color: #707070;
-    margin: 0px;
-    font-size: 18px;
-    font-weight: 100;
-}
-
-.experience ul li{
-    color: #707070;
-    font-size: 18px;
-    margin-bottom: 2px;
-}
-
 hr {
     height: 2px;
     border-width: 0;
@@ -170,61 +157,30 @@ hr {
     margin-top: 40px;
 }
 
-.education h2 {
-    color: #707070;
-    margin: 0px;
-    font-size: 28px;
-    font-weight: 500;
-}
-
-.education h3 {
-    color: #707070;
-    margin: 0px;
-    font-size: 18px;
-    font-weight: 100;
-}
-
-.education ul li{
-    color: #707070;
-    font-size: 18px;
-    margin-bottom: 2px;
-}
-
-.leadership h2 {
-    color: #707070;
-    margin: 0px;
-    font-size: 28px;
-    font-weight: 500;
-}
-
-.leadership h3 {
-    color: #707070;
-    margin: 0px;
-    font-size: 18px;
-    font-weight: 100;
-}
-
-.leadership ul li{
-    color: #707070;
-    font-size: 18px;
-    margin-bottom: 2px;
-}
-
+.experience h2,
+.education h2,
+.leadership h2,
 .projects h2 {
     color: #707070;
-    margin: 0px;
+    margin: 0;
     font-size: 28px;
     font-weight: 500;
 }
 
+.experience h3,
+.education h3,
+.leadership h3,
 .projects h3 {
     color: #707070;
-    margin: 0px;
+    margin: 0;
     font-size: 18px;
     font-weight: 100;
 }
 
-.projects ul li{
+.experience ul li,
+.education ul li,
+.leadership ul li,
+.projects ul li {
     color: #707070;
     font-size: 18px;
     margin-bottom: 2px;
