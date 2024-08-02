@@ -84,9 +84,9 @@ body {
 
 nav {
     width: 80%;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    margin: 0 auto;
+    /* border-top-left-radius: 10px;
+    border-top-right-radius: 10px; */
+    margin: 0 auto; 
     display: flex;
     flex-direction: row;
 
@@ -105,8 +105,16 @@ nav {
     transition: top 0.3s ease-in-out;
 }
 
+.sticky {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+/*
 nav.sticky {
     position: fixed;
+    position: sticky;
     border-radius: 0px;
     top: 0;
     left: 50%; 
@@ -116,8 +124,9 @@ nav.sticky {
 
     padding-bottom: 0px;
     transition: padding-bottom 0.3s ease-in-out;
-    /* background: linear-gradient(to right, rgba(227,118,130,1) 0%, rgba(147,93,140,1) 50%, rgba(95,77,147,1) 100%); */
+    background: linear-gradient(to right, rgba(227,118,130,1) 0%, rgba(147,93,140,1) 50%, rgba(95,77,147,1) 100%);
 }
+*/
 
 nav a {
     width: 25%;
